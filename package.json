@@ -1,0 +1,14 @@
+{
+  "name": "reversi",
+  "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "hint": "jshint ."
+  },
+  "devDependencies": {
+    "6to5": "^1.15.0",
+    "mocha": "^2.1.0"
+  }
+}

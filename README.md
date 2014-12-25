@@ -30,5 +30,15 @@ board.toString()
 7 |   |   |   |   |   |   |   |   |
    -------------------------------  */
 
+board.get(0, 0)  // "empty"
+board.get(3, 3)  // "white"
+board.get(3, 4)  // "black"
+
+board.turn   // "black"
+
+board.isLegal(3, 2, "black")  // true
+board.isLegal(3, 2, "white")  // false
+board.isLegal(4, 2, "white")  // true
+
 // more to come...
 ```

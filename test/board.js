@@ -113,6 +113,17 @@ describe('board', () => {
 
   });
 
+  describe('legalMovesFor', () => {
+
+    it('knows the legal moves for black', () => {
+      const board = new Board();
+      assert.deepEqual(board.legalMovesFor(black), [
+        [2, 3], [3, 2], [4, 5], [5, 4]
+      ]);
+    });
+
+  });
+
   describe('toString', () => {
 
     it('generates an ASCII board', () => {

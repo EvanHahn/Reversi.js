@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "mocha",
-    "hint": "jshint ."
+    "hint": "jshint lib"
   },
   "devDependencies": {
     "6to5": "^1.15.0",

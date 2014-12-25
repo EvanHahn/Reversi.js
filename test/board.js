@@ -93,6 +93,24 @@ describe('board', () => {
       });
     });
 
+    it('knows which squares are illegal for the color', () => {
+      assert(!board.checkLegal(2, 3, white));
+      assert(!board.checkLegal(2, 4, black));
+      assert(!board.checkLegal(3, 2, white));
+      assert(!board.checkLegal(4, 5, white));
+      assert(!board.checkLegal(5, 4, white));
+    });
+
+    it('knows faraway squares are illegal', () => {
+      [white, black].forEach(color => {
+        assert(!board.checkLegal(0, 0, color));
+        assert(!board.checkLegal(1, 1, color));
+        assert(!board.checkLegal(0, 7, color));
+        assert(!board.checkLegal(7, 0, color));
+        assert(!board.checkLegal(7, 7, color));
+      });
+    });
+
   });
 
   describe('toString', () => {

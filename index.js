@@ -1,2 +1,2 @@
 require('6to5/register');
-require('lib/reversi.js');
+module.exports = require('./lib/reversi.js');

@@ -9,7 +9,7 @@
   "immed": true,
   "latedef": true,
   "newcap": true,
-"node": true,
+  "node": true,
   "noarg": true,
   "noempty": true,
   "nonew": true,
@@ -18,5 +18,8 @@
   "undef": true,
   "unused": true,
   "strict": false,
-  "trailing": true
+  "trailing": true,
+  "predef": [
+    "describe", "it", "before", "after", "beforeEach", "afterEach"
+  ]
 }
